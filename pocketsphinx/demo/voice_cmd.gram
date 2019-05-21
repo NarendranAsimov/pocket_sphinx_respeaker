@@ -1,0 +1,16 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar similar to kws example
+ */
+
+grammar voice_cmd;
+
+public <move> = MOVE FORWARD;
+
+public <move3> = HEY <name> [<command>];
+
+<name> = SAYA;
+
+<command> = QUIT | PLAY;
+
